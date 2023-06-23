@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <script src="https://kit.fontawesome.com/5cdd7f70f3.js" crossorigin="anonymous"></script>
+  <title>Lista de la compra</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main">
+    <div class="main-title">
+     <img src="assets/images/main-phot.png" alt="" width="100">
+     <h1>Lista de la compra</h1>
+    </div>
+    <div>
+        <div class="form-control">
+            <input
+              type="text"
+              class="form-input"
+              id="item-input"
+              name="item"
+              placeholder="Añadir nuevo elemento"
+            />
+        <button> <i class="fa-solid fa-plus"></i>Añadir</button>
+    </div>
+    <div>
+        <div class="filter">
+            <input
+              type="text"
+              class="form-input-filter"
+              id="filter"
+              placeholder="Filtrar elementos"
+            />
+          </div>
+        <ul id="item-list" class="items">
+            <li>
+                Juice
+                <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Orange
+                <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Banana
+                <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Lemon
+                <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+
+        </ul>
+    <button>Vaciar lista</button>
+    </div>
+    
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
