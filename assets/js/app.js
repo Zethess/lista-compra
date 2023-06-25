@@ -134,7 +134,7 @@ function checkUI(){
     itemInput.value = '';
 
     const items = itemList.querySelectorAll('li');
-    console.log(items);
+
     if (items.length === 0) {
         clearButton.classList.add('hide-element');
         filter.classList.add('hide-element');
@@ -178,7 +178,7 @@ function getItemsFromStorage(){
 
 function onClickItem(e){
     const li = e.target.parentElement.parentNode;
-    console.log(e.target);
+
     if(e.target.parentElement.classList.contains('remove-item')){
         deleteElementFromList(li);
     } else if(e.target.classList.contains('li-class')){
