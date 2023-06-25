@@ -1,0 +1,153 @@
+:root{ 
+	/* Colors */
+	/* Primary */
+	--blue: hsl(223, 87%, 63%);
+  
+	/* Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+  
+    /* ### Secondary */
+
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+	/* font */
+	font-family: 'Noto Sans', sans-serif;
+}
+*{
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+    font-weight: 300;font-family: var(--font-family);
+}
+body{
+    display: flex;
+     justify-content: right;
+    text-align: center; 
+    /* width: 100%;*/
+    min-height: 100vh; 
+    
+    font-size: 15px;
+    /* font-weight: 200; */
+    /* width: 100%; */
+    background-image: url('../images/bg2.jpeg');
+	background-repeat: no-repeat;
+   
+	background-size:cover; 
+    margin-right: 20%;
+    
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-size: 35px;
+}
+.main{
+    max-width: 400px;
+}
+.main-title{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+}
+.inputs{
+    width: 100%;
+    padding: 7px 10px;
+    /* border-radius: 5px; */
+    outline: none;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+.inputs::placeholder{
+    font-weight: 500;
+    padding-left: 5px;
+}
+.form-control{
+display: flex;
+flex-direction: column;
+/* align-items: left; */
+}
+.form-control input{
+    border-radius: 5px;
+}
+.form-control button{
+    background-color: black;
+    color: white;
+    width: fit-content; /* Ajustar al contenido */
+    display: inline-flex; /* Ajustar al contenido */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    gap:10px;
+    align-items: center;
+}
+
+.filter input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+.items li{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.items button{
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+.empty-button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    font-weight: 400;
+}
+.hide-element{
+    display: none;
+}
+
+.edit-mode{
+    color: grey;
+}
+
+.addElement:hover,.items button:hover,.empty-button:hover{
+    cursor: pointer;   
+}
+.empty-button:hover{
+    opacity: 0.7;
+}
+.addElement:hover, .empty-button:hover{
+    transform: translate(-1px, -1px);
+}
+.empty-button:active,.addElement:active{
+    transform: translate(1px,1px);
+} 
+
+@media screen and (max-width: 500px){
+    body{
+        justify-content: center;
+        background-position: 50% 10% ;
+        margin-right: 0;
+    }
+}
